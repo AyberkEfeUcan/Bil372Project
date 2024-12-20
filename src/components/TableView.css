@@ -1,0 +1,230 @@
+/* Genel Arkaplan (Canlı Ama Sade Tonlar) */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(120deg, #f0f4f8, #d9e8f5);
+    color: #333;
+    padding: 20px;
+}
+
+/* Sayfa Başlığı */
+h1, h2 {
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #2a6fb1;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2 {
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+
+/* Menü Stili (Yumuşak Canlılık) */
+ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 15px 0;
+    margin: 0 auto;
+    background: #e7f0fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+ul li {
+    margin: 0 10px;
+}
+
+ul li div {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #2a6fb1;
+    background: linear-gradient(to right, #9fd3fc, #77aafc);
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+ul li div:hover {
+    transform: scale(1.05);
+    background: linear-gradient(to right, #77aafc, #4facfe);
+}
+
+/* Tablo Stili (Canlı ve Dengeli Tonlar) */
+table {
+    width: 90%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: left;
+    font-size: 14px;
+    color: #333;
+}
+
+table th {
+    background: linear-gradient(90deg, #77aafc, #4facfe);
+    color: #fff;
+    border-bottom: 2px solid #ddd;
+}
+
+table tr:nth-child(odd) {
+    background: #f7fbff;
+}
+
+table tr:nth-child(even) {
+    background: #eaf3fc;
+}
+
+table tr:hover {
+    background: #dbe7f7;
+}
+
+/* Tablo Başlıkları */
+th {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 15px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+th:hover {
+    background-color: #45a049;
+}
+
+th::after {
+    content: '↑↓'; /* Başlangıçta çift ok */
+    font-size: 12px;
+    position: absolute;
+    right: 8px;
+}
+
+/* Sıralama Okları */
+th.sorted-asc::after {
+    content: '↑'; /* Artan ok */
+}
+
+th.sorted-desc::after {
+    content: '↓'; /* Azalan ok */
+}
+
+/* Filtre Alanı (Sade ama Canlı Kartlar) */
+.filter-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 20px;
+    background: #f0f4f8;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 90%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.filter-item {
+    flex: 1 1 200px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.filter-item label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #2a6fb1;
+}
+
+.filter-item input, .filter-item select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #333;
+    font-size: 14px;
+}
+
+.filter-item input:focus, .filter-item select:focus {
+    border-color: #77aafc;
+    background: #f0f9ff;
+}
+
+/* Butonlar (Canlı Ama Zarif) */
+button, .back-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    border: none;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+button:hover, .back-button:hover {
+    background: linear-gradient(to right, #77aafc, #4facfe);
+    transform: translateY(-4px);
+}
+
+/* Detaylar Kutusu */
+.details-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Satır Detayı */
+.row-detail {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f7fbff;
+    border: 1px solid #dbe7f7;
+    border-radius: 5px;
+}
+
+.row-detail strong {
+    color: #2a6fb1;
+    font-weight: bold;
+}
+
+/* İlişkili Tablo Stili */
+.related-table {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.related-table h3 {
+    color: #0056b3;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
